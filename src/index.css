@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.above{
+    background: rgb(240, 240, 240);
+    transition: all 0.3s;
+}
+
+/* drag-drop-container */
+.drag-drop-container {
+    border: 2px dashed #ccc; /* Basic dashed border */
+    padding: 20px;
+    text-align: center;
+    cursor: pointer; /* Indicate it's clickable */
+    min-height: 150px; /* Optional: Ensure space even when empty */
+  }
+  
+  /* Basic text styling */
+  .drag-drop-container p {
+    margin-bottom: 10px; 
+  }
+  
+  /* Highlighting while dragging over */
+  .drag-drop-container.red { 
+    border-color: red; 
+    background-color: #c2c2c2; /* Light red background */
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  /* Input button (you might want to hide this visually) */
+  .drag-drop-container input[type="file"] {
+    display: none; /* Hide the default file input */
+  }
+  
+  /* Button Styles */
+  .drag-drop-container button {
+    padding: 6px 20px;
+    margin: 6px 5px; 
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.message{
+    color: greenyellow;
+}

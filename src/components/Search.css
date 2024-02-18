@@ -1,0 +1,22 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input[type="text"] {
+    flex-grow: 1; /* Input takes up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+    cursor: pointer;
+  }
+  
